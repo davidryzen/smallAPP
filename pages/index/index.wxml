@@ -1,0 +1,327 @@
+<view class="all">
+
+  <view class='header'>
+    <view class='header-text0'>{{meetingName}}</view>
+
+    <view class='header-son'>
+
+      <text class="header-text1 header-text11">
+              地点：杭州黄龙饭店水晶宫\n
+              时间：12月04日 09:03
+              
+              </text>
+      <navigator class="header-text1 header-text12" url="/pages/detailMeeting/detailMeeting" hover-class="navigator-hover">会议详情</navigator>
+    </view>
+
+  </view>
+
+  <!-- 会议相关文件 -->
+  <view class='document'>
+  <text class='document-title'>会议相关文件</text>
+      <navigator class='doucment-item'  url="../images/images?num=1">1.会议通知文件</navigator>
+      <navigator class='doucment-item'  url="../images/images?num=2">2.会议通知文件2</navigator>     
+  </view>
+
+  <!-- 会议嘉宾 -->
+  <view class='guest'>
+  
+    <text class='guest-title'>会议嘉宾</text>
+    <scroll-view scroll-y class='guest-scroll' bindscrolltolower="lower">
+
+      <view wx:for="{{guestList}}" wx:key class="guest-item">
+
+        <image class="guest-item-img" src='../../img/person01.jpg'></image>
+
+        <view class='guest-son'>
+
+          <text class="guest-text1 guest-text11">
+                  韩明\n
+                中国饭店协会会长
+                  
+                  </text>
+          <navigator class="guest-text12" url="../detailPerson/detailPerson" hover-class="navigator-hover">介绍
+            <image src='../../img/right.jpg' bindtap='gotoPerson'></image>
+          </navigator>
+        </view>
+
+      </view>
+
+    </scroll-view>
+    <text class="guest-text13" space="emsp" decode="{{true}}">在嘉宾上往上滑动查看更多</text>
+  </view>
+
+  <!-- 详细的行程安排 -->
+  <view class='schedule'>
+    <view class="schedule-items">
+      <view class='schedule-title'>
+        <view class='schedule-title-left'>
+          <text class='schedule-title-left-text11'>9:00</text>
+          <image mode='aspectFit' class='schedule-img11' src="../../img/2.png"></image>
+          <text class='schedule-title-left-text12'>国际年会代表集体合影</text>
+        </view>
+        <image mode='aspectFit' class='schedule-img12' src="../../img/shijian.png"></image>
+        <text class="schedule-title-right">3个小时</text>
+
+      </view>
+      <view class='schedule-content'>
+        <view class='vline'></view>
+        <view class="schedule-content-item">
+          <view class='circle'></view>
+          <text class='schedule-text12'>18:00</text>
+          <text class='schedule-text13'>开幕仪式及致辞</text>
+        </view>
+        <view class="schedule-content-item">
+          <view class='circle'></view>
+          <text class='schedule-text12' decode='true'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</text>
+          <text class='schedule-text13'>中国饭店协会会长</text>
+        </view>
+        <view class="schedule-content-item">
+
+          <text class='schedule-text12' decode='true'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</text>
+          <text class="schedule-text13-son" bindtap='showInfo'>韩明</text>
+        </view>
+        <view class="schedule-content-item">
+          <view class='circle'></view>
+          <text class='schedule-text12' decode='true'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</text>
+          <text class='schedule-text13'>商务部原副部长</text>
+        </view>
+        <view class="schedule-content-item">
+
+          <text class='schedule-text12' decode='true'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</text>
+          <text class="schedule-text13-son" bindtap='showInfo'>张志刚</text>
+        </view>
+        <view class="schedule-content-item">
+          <view class='circle'></view>
+          <text class='schedule-text12' decode='true'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</text>
+          <text class='schedule-text13'>杭州市政府领导</text>
+        </view>
+        <view class="schedule-content-item">
+          <view class='circle'></view>
+          <text class='schedule-text12' decode='true'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</text>
+          <text class='schedule-text13'>麦德龙集团主席</text>
+        </view>
+        <view class="schedule-content-item">
+
+          <text class='schedule-text12' decode='true'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</text>
+          <text class="schedule-text13-son" bindtap='showInfo'>Jeroen de Groot</text>
+        </view>
+        <view class="schedule-content-item">
+          <view class='circle'></view>
+          <text class='schedule-text12' decode='true'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</text>
+          <text class='schedule-text13'>国际饭店与餐馆协会主席</text>
+        </view>
+
+        <view class='schedule-end'>
+
+          <text class='schedule-end-text11'>14:00</text>
+          <view class='circle schedule-end-circle'></view>
+          <text class='schedule-end-left-text21'>午餐时间</text>
+
+
+
+        </view>
+      </view>
+
+      <view class="showInfo" hidden='{{flag}}'>
+        <image src='../../img/QRcode.jpg'> </image>
+        <text class='showInfo-text11' bindtap='showInfo'>\n确定</text>
+      </view>
+
+
+      <view class='schedule-footer'>
+        <image src='../../img/location.jpg' class='schedule-footer-img11'></image>
+        <text class='schedule-footer-text22'>君澜自主餐厅</text>
+        <text class='schedule-footer-text11' bindtap='showInfo'>签到二维码</text>
+      </view>
+    </view>
+
+
+
+<view class="schedule-items schedule-items2">
+      <view class='schedule-title'>
+        <view class='schedule-title-left'>
+          <text class='schedule-title-left-text11'>9:00</text>
+          <image mode='aspectFit' class='schedule-img11' src="../../img/hy.png"></image>
+          <text class='schedule-title-left-text12'>国际年会代表集体合影</text>
+        </view>
+        <image mode='aspectFit' class='schedule-img12' src="../../img/shijian.png"></image>
+        <text class="schedule-title-right">3个小时</text>
+
+      </view>
+      <view class='schedule-content'>
+        <view class='vline vline2'></view>
+        <view class="schedule-content-item">
+          <view class='circle circle2'></view>
+          <text class='schedule-text12'>8:00</text>
+          <text class='schedule-text13'>开幕仪式及致辞</text>
+        </view>
+        <view class="schedule-content-item">
+          <view class='circle circle2'></view>
+          <text class='schedule-text12' decode='true'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</text>
+          <text class='schedule-text13'>中国饭店协会会长</text>
+        </view>
+        <view class="schedule-content-item">
+
+          <text class='schedule-text12' decode='true'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</text>
+          <text class="schedule-text13-son" bindtap='showInfo'>韩明</text>
+        </view>
+        <view class="schedule-content-item">
+          <view class='circle circle2'></view>
+          <text class='schedule-text12' decode='true'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</text>
+          <text class='schedule-text13'>商务部原副部长</text>
+        </view>
+        <view class="schedule-content-item">
+
+          <text class='schedule-text12' decode='true'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</text>
+          <text class="schedule-text13-son" bindtap='showInfo'>张志刚</text>
+        </view>
+        <view class="schedule-content-item">
+          <view class='circle circle2'></view>
+          <text class='schedule-text12' decode='true'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</text>
+          <text class='schedule-text13'>杭州市政府领导</text>
+        </view>
+        <view class="schedule-content-item">
+          <view class='circle circle2'></view>
+          <text class='schedule-text12' decode='true'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</text>
+          <text class='schedule-text13'>麦德龙集团主席</text>
+        </view>
+        <view class="schedule-content-item">
+
+          <text class='schedule-text12' decode='true'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</text>
+          <text class="schedule-text13-son" bindtap='showInfo'>Jeroen de Groot</text>
+        </view>
+        <view class="schedule-content-item">
+          <view class='circle circle2'></view>
+          <text class='schedule-text12' decode='true'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</text>
+          <text class='schedule-text13'>国际饭店与餐馆协会主席</text>
+        </view>
+
+        <view class='schedule-end'>
+
+          <text class='schedule-end-text11'>14:00</text>
+          <view class='circle circle2 schedule-end-circle'></view>
+          <text class='schedule-end-left-text21'>午餐时间</text>
+
+
+
+        </view>
+      </view>
+
+      <view class="showInfo" hidden='{{flag}}'>
+        <image src='../../img/QRcode.jpg'> </image>
+        <text class='showInfo-text11' bindtap='showInfo'>\n确定</text>
+      </view>
+
+
+      <view class='schedule-footer'>
+        <image src='../../img/location.jpg' class='schedule-footer-img11'></image>
+        <text class='schedule-footer-text22'>君澜自主餐厅</text>
+        <text class='schedule-footer-text11' bindtap='showInfo'>签到二维码</text>
+      </view>
+    </view>
+
+
+
+
+
+
+  </view>
+
+  <!-- 酒店服务 -->
+  <view class='hotelService'>
+    <text class='hotelService-text11'>酒店服务</text>
+
+
+
+    <scroll-view class='scrollService' scroll-x>
+      <view class="service-item">
+        <view class="service-item-content">
+          <image class='service-item-img11' src='../../img/1.png'></image>
+          <text class="service-item-content-text01">预约车</text>
+          <text class="service-item-content-text11">预约滴滴打车</text>
+        </view>
+      </view>
+
+      <view class="service-item">
+        <view class="service-item-content">
+          <image class='service-item-img11' src='../../img/1.png'></image>
+          <text class="service-item-content-text01">预约车</text>
+          <text class="service-item-content-text11">预约滴滴打车</text>
+        </view>
+      </view>
+
+      <view class="service-item">
+        <view class="service-item-content">
+          <image class='service-item-img11' src='../../img/1.png'></image>
+          <text class="service-item-content-text01">预约车</text>
+          <text class="service-item-content-text11">预约滴滴打车</text>
+        </view>
+      </view>
+
+
+
+
+
+
+    </scroll-view>
+
+  </view>
+
+
+  <!-- 会议服务 -->
+  <view class='hotelService'>
+    <text class='hotelService-text11'>会议服务</text>
+
+
+
+    <scroll-view class='scrollService' scroll-x>
+      <view class="service-item">
+        <view class="service-item-content">
+          <image class='service-item-img11' src='../../img/1.png'></image>
+          <text class="service-item-content-text01">预约车</text>
+          <text class="service-item-content-text11">预约滴滴打车</text>
+        </view>
+      </view>
+
+      <view class="service-item">
+        <view class="service-item-content">
+          <image class='service-item-img11' src='../../img/1.png'></image>
+          <text class="service-item-content-text01">预约车</text>
+          <text class="service-item-content-text11">预约滴滴打车</text>
+        </view>
+      </view>
+
+      <view class="service-item">
+        <view class="service-item-content">
+          <image class='service-item-img11' src='../../img/1.png'></image>
+          <text class="service-item-content-text01">预约车</text>
+          <text class="service-item-content-text11">预约滴滴打车</text>
+        </view>
+      </view>
+
+      <view class="service-item">
+        <view class="service-item-content">
+          <image class='service-item-img11' src='../../img/1.png'></image>
+          <text class="service-item-content-text01">预约车</text>
+          <text class="service-item-content-text11">预约滴滴打车</text>
+        </view>
+      </view>
+
+      <view class="service-item">
+        <view class="service-item-content">
+          <image class='service-item-img11' src='../../img/1.png'></image>
+          <text class="service-item-content-text01">预约车</text>
+          <text class="service-item-content-text11">预约滴滴打车</text>
+        </view>
+      </view>
+
+
+
+
+    </scroll-view>
+
+  </view>
+
+
+
+</view>

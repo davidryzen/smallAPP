@@ -1,0 +1,48 @@
+{
+  "pages": [
+    "pages/index/index",
+    "pages/signIn/signIn",
+    
+    "pages/logs/logs",
+    "pages/images/images",
+    "pages/detailMeeting/detailMeeting",
+    "pages/detailPerson/detailPerson"
+   
+  ],
+  "window": {
+    "backgroundTextStyle": "light",
+    "navigationBarBackgroundColor": "#fff",
+    "navigationBarTitleText": "觅集智慧会议",
+    "navigationBarTextStyle": "black"
+  },
+  "tabBar": {
+    "list": [
+      {
+        "pagePath": "pages/index/index",
+        "text": "导航",
+        "iconPath": "img/navigator.png",
+        "selectedIconPath": "img/navigator.png"
+      },
+      {
+        "pagePath": "pages/logs/logs",
+        "text": "电话",
+        "iconPath": "img/tel.png",
+        "selectedIconPath": "img/tel.png"
+      },
+      {
+        "pagePath": "pages/logs/logs",
+        "text": "关注动态",
+        "backgroundColor": "green",
+        "iconPath": "img/navigator.png",
+        "selectedIconPath": "img/navigator.png"
+      },
+      {
+        "pagePath": "pages/signIn/signIn",
+        "text": "去报名",
+        "backgroundColor": "red",
+        "iconPath": "img/tel.png",
+        "selectedIconPath": "img/tel.png"
+      }
+    ]
+  }
+}

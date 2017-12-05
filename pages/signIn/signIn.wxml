@@ -1,0 +1,38 @@
+<view class="all">
+  <view class='header'>
+    <view class='header-text0'>第53届国际饭店与餐馆列会年会暨一带一路国际饭店也合作大会</view>
+  </view>
+
+  <!-- 具体表单开始 -->
+  <view class='content'>
+   <form>
+    <view class='form-item'>
+     联系姓名<input name="useName" class='form-item-input11' placeholder="填写您的姓名" focus/>
+    </view>
+
+    <view class='form-item'>
+     联系手机<input name="tel" class='form-item-input11' placeholder="填写您的联系号码" />
+    </view>
+
+    <view class='form-item'>
+     公司名称<input name="companyName" class='form-item-input11' placeholder="填写您的公司名称" />
+    </view>
+
+    <view class='form-item'>
+     公司职位<input name="job" class='form-item-input11' placeholder="填写您在公司中的职位" />
+    </view>
+   
+   </form>
+  </view>
+ 
+  <!-- 具体表单结束 -->
+   <view class='end'>
+    会议时间：请于 <text class="end-text11">12月04日09点30分</text>前入场 <text>\n</text>
+    <text class="end-text11">特别备注：暂不支持线上付款，请于报名成功后线下打款或转账</text>
+  </view>
+  <view class='placeholder'></view>
+  <view class='signIn'>
+    <text class='signIn-text11'>价格 <text class='signIn-text11-text11'>￥100</text> </text>
+     <text class='signIn-text22' bindtap="signIn">马上报名</text>
+  </view>
+</view>

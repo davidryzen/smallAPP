@@ -1,0 +1,19 @@
+/* pages/detailMeeting/detailMeeting.wxss */
+.header {
+  padding: 25rpx;
+  width: 94%;
+  background-color: RGB(81, 141, 213);
+  color: #fff;
+}
+
+.header-text0 {
+  padding-right: 5rpx;
+  font-size: 1.2rem;
+  text-align: center;
+  line-height: 3.5rem
+}
+.content{text-indent:2rem;padding:0 18rpx;font-size: 0.8rem;line-height: 1.5rem}
+.content-second .content-second-timeAddress{font-weight: bold}
+.content-second-time .content-second-text11{text-indent:2rem}
+.content .content-second-end{display: flex;justify-content: flex-end;margin-top: 100rpx}
+.content-second-view11-end{width: 55%;text-align: right;display: flex;flex-direction: column;justify-content: center;align-items: center}

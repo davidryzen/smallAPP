@@ -1,0 +1,9 @@
+/* pages/detailPesrson/detailPerson.wxss */
+.all{display:flex;justify-content: center;display: flex;flex-direction: column;}
+.header{background-color: RGB(81, 141, 213);height: 200rpx;width:100%}
+.avatar{width: 160rpx;height:160rpx;position: absolute;z-index:9;right:35%;top: 120rpx;border-radius: 50%}
+.info{width: 100%;margin-top: 110rpx;text-align: center;font-weight: bold;padding-left: 40rpx;}
+.click{margin-top: 35rpx;display: flex;flex-direction: row;justify-content: space-around}
+.click .click-img{width:50rpx;height: 50rpx}
+.click .click-text11{display: flex;align-items: center}
+.detailInfo{text-indent:2rem;font-size: 0.9rem;line-height: 1.6rem;margin-top: 20rpx;padding:30rpx 20rpx 0 20rpx}

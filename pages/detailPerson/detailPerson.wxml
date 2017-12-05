@@ -1,0 +1,31 @@
+ <view class='all'>
+     <view class='header'>
+     </view>
+    <image class="avatar" src='../../img/person01.jpg'/>
+    <view class='info'>
+     韩明 <text>\n</text>中国饭店协会会长
+    </view>
+    <view class='click'>
+      <view class='click-text11'><image class='click-img' src='../../img/ly.png'/>点击(15)       </view>
+      <text>|</text>
+
+      <view class='click-text11'><image class='click-img' src='../../img/dz1.png'/>点赞(15)       </view>
+    </view>
+
+    <view class='detailInfo'>
+      今天偶然发现一个小问题，本来写的语句正确，可页面就是无法跳转，百度过后才找到了问题所在，特地总结如下：
+出现这种情况可能有三种问题：
+1.跳转的页面没有在app.json页面中注册。如果是这种问题会在控制台弹出错误，留意控制台即可；
+2.跳转的路径不正确。初学时不太注意会出现这种问题，这种问题同样会在控制台弹出错误。
+3.跳转的页面位于TabBar中。这种情况不会在控制台弹出错误，需要自己去检查，解决的办法是将navigator改成switchtab即可
+    </view>
+    <view class='detailInfo'>
+    今天偶然发现一个小问题，本来写的语句正确，可页面就是无法跳转，百度过后才找到了问题所在，特地总结如下：
+出现这种情况可能有三种问题：
+1.跳转的页面没有在app.json页面中注册。如果是这种问题会在控制台弹出错误，留意控制台即可；
+2.跳转的路径不正确。初学时不太注意会出现这种问题，这种问题同样会在控制台弹出错误。
+3.跳转的页面位于TabBar中。这种情况不会在控制台弹出错误，需要自己去检查，解决的办法是将navigator改成switchtab即可
+    </view>
+    
+    
+ </view>

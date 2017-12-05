@@ -1,0 +1,86 @@
+<view class="all">
+
+  <view class='header'>
+    <view class='header-text0'>第53届国际饭店与餐馆列会年会暨一带一路国际饭店也合作大会</view>
+  </view>
+  <view class='content'>
+     <view class="content-first">
+     一般在小程序的跳转中，有常见的2种方法： 1，用ontap标签来调用js函数里面的navigateTo实现跳转 如 注意链接的层次，官方给出的目录层次不建议超过5层的。本目录..一般在小程序的跳转中，有常见的2种方法： 1，用ontap标签来调用js函数里面的navigateTo实现跳转 如 注意链接的层次，官方给出的目录层次不建议超过5层的。本目录..一般在小程，官方给出的目录层次不建议超过5层的。本目录..
+     </view>
+     <view class='content-second'>
+       <view class='content-second-timeAddress'>
+       一、时间地点
+       </view>
+       <view class='content-second-time'>
+       时间:2017年12月3-6日
+       </view>
+       <view class='content-second-address'>
+      地点:杭州黄龙饭店
+       </view>
+
+     </view>
+
+     <view class='content-second'>
+       <view class='content-second-timeAddress'>
+       二、会议主题
+       </view>
+       <view class='content-second-time'>
+        “新技术，大数据，新生态”
+       </view>
+     </view>
+
+     <view class='content-second'>
+       <view class='content-second-timeAddress'>
+       三、主要内容
+       </view>
+       <view class='content-second-time' decode="true">
+         <view class='content-second-view11'>1.酒店互联网+新生态发展论坛\n</view> 
+         <view class='content-second-view11'> 2.酒店互联网+新生态发展论坛\n</view> 
+         <view class='content-second-view11'> 3.酒店互联网+新生态发展论坛\n</view> 
+       </view>
+     </view>
+
+     <view class='content-second'>
+       <view class='content-second-timeAddress'>
+       四、组织形式
+       </view>
+       <view class='content-second-time' decode="true">
+         <view class='content-second-view11'>主办单位:国际饭店与餐饮协会</view> 
+         <view class='content-second-view11'>联合主办:中国饭店协会</view> 
+         <view class='content-second-view11'> 承办单位：杭州菜研究会</view> 
+       </view>
+     </view>
+
+     <view class='content-second'>
+       <view class='content-second-timeAddress'>
+       五、参会人员
+       </view>
+       <view class='content-second-time' decode="true">
+         <view class='content-second-view11'>国际饭店与餐饮协会国际饭店与餐饮协会国际饭店与餐饮协会国际饭店与餐饮协会国际饭店与餐饮协会国际饭店与餐饮协会国际饭店与餐饮协会国际饭店与餐饮协会国际饭店与餐饮协会</view> 
+        
+       </view>
+     </view>
+
+
+     <view class='content-second'>
+       <view class='content-second-timeAddress'>
+       六、有关事项
+       </view>
+       <view class='content-second-time' decode="true">
+         <view class='content-second-view11'>1.酒店互联网+新生态发展论坛\n</view> 
+         <view class='content-second-view11'> 2.酒店互联网+新生态发展论坛\n</view> 
+         <view class='content-second-view11'> 3.酒店互联网+新生态发展论坛\n</view> 
+       </view>
+     </view>
+
+      <view class='content-second-end'>
+         <view class='content-second-view11-end'>
+            <text class='content-second-view11-text11' decode='true'>中国饭店协会\n</text>
+            <text class='content-second-view11-text11' decode='true'>二零一七年七月十八日</text>
+            
+         </view> 
+     </view>
+
+  </view>
+
+</view>

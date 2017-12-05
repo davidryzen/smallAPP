@@ -1,0 +1,31 @@
+.all {
+  width: 100%;
+  background-color: RGB(229, 230, 232);
+  font-family: sans-serif;
+  font-size: 0.8em;
+}
+.header {
+  padding: 25rpx;
+  width: 94%;
+  background-color: RGB(81, 141, 213);
+  color: #fff;
+}
+
+.header-text0 {
+  padding-right: 5rpx;
+  font-size: 1.2rem;
+  text-align: center;
+  line-height: 3.5rem
+}
+.content{
+  margin-top:8rpx;background-color: #fff
+
+}
+.content .form-item{display: flex;align-items: center;font-size: 0.9rem;justify-content: space-around;padding-top: 40rpx;padding-bottom:40rpx;border-bottom:2rpx solid RGB(229, 230, 232);}
+.form-item .form-item-input11{background-color:RGB(229, 230, 232) }
+ .end{background-color: #fff;padding:20rpx 30rpx 0 30rpx}
+ .end .end-text11{color:red;font-weight: bold}
+ .placeholder{height: 130rpx;background-color: #fff}
+ .signIn{position:fixed;bottom:0;border-top:3rpx solid darkgray;width: 100%;display:flex;justify-content: space-around;padding:25rpx 0;align-items: center}
+ .signIn-text11 .signIn-text11-text11{color:red;font-weight: bold}
+ .signIn .signIn-text22{ background-color: RGB(81, 141, 213);color:#fff;padding:10rpx;border-radius:30%}

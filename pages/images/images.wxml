@@ -1,0 +1,3 @@
+<!--images/imgItem.wxml-->
+<text> {{num}}</text>
+<image src='../../img/{{num}}.png'></image>
